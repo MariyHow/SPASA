@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPASA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c612b1dcec.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <section id="landing" onmousemove="moveBackground(event)">
+        <nav>
+            <div class="nav__container">
+                <a href="index.html" class="logo__wrapper">
+                    <img class="logo" src="./assets/moon.png" alt="Spasa Logo">
+                    <h2>SPASA</h2>
+                </a>
+                <ul class="nav__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="#" onclick="toggleModal()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>Explore <span class="blue">NASA's</span> universe through images, data, and discovery.</h1>
+                    <h2>What Are You Looking For In The Universe? 🚀</h2>
+                    <div class="header__search">
+                        <input id="searchInput" type="text" class="header__search--input" placeholder="Search by planets, moons, galaxies, star...">
+                        <button id="searchButton" class="header__search--btn click"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="background__img--wrapper">
+            <img src="assets/space.png" class="background__img">
+        </div>
+        <img src="./assets/moonemoji.png" class="space__img space__img--0">
+        <img src="./assets/moonemoji2.png" class="space__img space__img--1">
+        <img src="./assets/moonemoji3.png" class="space__img space__img--2">
+        <img src="./assets/star1.png" class="space__img space__img--3">
+        <img src="./assets/star2.png" class="space__img space__img--4">
+        <img src="./assets/star3.png" class="space__img space__img--5">
+    <footer>
+        <div class="footer__container">
+            <a href="index.html" class="footer__logo">
+                <img src="./assets/moon.png" alt="SPASA LOGO">
+                <span>SPASA</span>
+            </a>
+            <div class="footer__links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore Space</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="footer__copyright">Copyright &copy; 2026 SPASA. Created by Samariy Howard.</p>
+        </div>
+    </footer>
+</body>
+</html>

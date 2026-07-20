@@ -1,0 +1,326 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Favorite Page" id="bYOzlK5VAfFfxse-EkwF">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bmuIj6awxCUeSis1TxVh-1" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=22;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;" value="Space Inventory Manager Domain Model" vertex="1">
+          <mxGeometry height="130" width="410" x="345" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bmuIj6awxCUeSis1TxVh-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NASAImage&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ id: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ title: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ imageUrl: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ description: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ dateCreated: dateCreated&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ constructor()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="160" x="718" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="bmuIj6awxCUeSis1TxVh-3" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ id: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ email: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ favorites: Array&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addFavorite(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="160" x="168" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="bmuIj6awxCUeSis1TxVh-4" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Favorite&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ id: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ user: User&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nasaImage: NASAImage&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ createdDate: Date&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ constructor()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="160" x="453" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="bmuIj6awxCUeSis1TxVh-5" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SearchResult&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ query: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ image: Array&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ resultCount: Number&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addImage(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="160" x="718" y="477" as="geometry" />
+        </mxCell>
+        <mxCell id="bmuIj6awxCUeSis1TxVh-13" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="bmuIj6awxCUeSis1TxVh-4" value="saves">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="328" y="327" as="sourcePoint" />
+            <mxPoint x="398" y="347" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmuIj6awxCUeSis1TxVh-15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="bmuIj6awxCUeSis1TxVh-2" value="references">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="613" y="327" as="sourcePoint" />
+            <mxPoint x="693" y="327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmuIj6awxCUeSis1TxVh-16" edge="1" parent="1" source="bmuIj6awxCUeSis1TxVh-5" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="bmuIj6awxCUeSis1TxVh-2" value="contains">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="788" y="467" as="sourcePoint" />
+            <mxPoint x="808" y="427" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="m2O5IObUx5WVkGM6pgIl" name="SPASA App">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 31px;&quot;&gt;SPASA React Component and Data-Flow Architecture&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="490" x="305" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-2" parent="1" style="html=1;whiteSpace=wrap;" value="App" vertex="1">
+          <mxGeometry height="50" width="110" x="495" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FFFF33);" target="iu2NFfqAwiD5j62CDNTO-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="260" as="sourcePoint" />
+            <mxPoint x="550" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-4" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fillColor=#e3c800;strokeColor=light-dark(#B09500,#FFFF33);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="260" />
+            </Array>
+            <mxPoint x="240" y="260" as="sourcePoint" />
+            <mxPoint x="840" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-6" parent="1" style="html=1;whiteSpace=wrap;" value="Nav" vertex="1">
+          <mxGeometry height="50" width="110" x="180" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-7" parent="1" style="html=1;whiteSpace=wrap;" value="React Router" vertex="1">
+          <mxGeometry height="50" width="110" x="495" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-8" parent="1" style="html=1;whiteSpace=wrap;" value="Footer" vertex="1">
+          <mxGeometry height="50" width="110" x="780" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-9" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-6" style="endArrow=none;html=1;rounded=0;fillColor=#e3c800;strokeColor=light-dark(#B09500,#FFFF33);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="280" as="sourcePoint" />
+            <mxPoint x="240" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-10" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-7" style="endArrow=none;html=1;rounded=0;fillColor=#e3c800;strokeColor=light-dark(#B09500,#FFFF33);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="500" y="310" as="sourcePoint" />
+            <mxPoint x="550" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-11" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-8" style="endArrow=none;html=1;rounded=0;fillColor=#e3c800;strokeColor=light-dark(#B09500,#FFFF66);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="850" y="290" as="sourcePoint" />
+            <mxPoint x="840" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="410" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-13" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="410" />
+            </Array>
+            <mxPoint x="240" y="410" as="sourcePoint" />
+            <mxPoint x="840" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-14" parent="1" style="html=1;whiteSpace=wrap;" value="Home" vertex="1">
+          <mxGeometry height="50" width="110" x="180" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-15" parent="1" style="html=1;whiteSpace=wrap;" value="Explore" vertex="1">
+          <mxGeometry height="50" width="110" x="390" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-16" parent="1" style="html=1;whiteSpace=wrap;" value="SpaceCard" vertex="1">
+          <mxGeometry height="50" width="110" x="390" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-17" parent="1" style="html=1;whiteSpace=wrap;" value="CardInfo" vertex="1">
+          <mxGeometry height="50" width="110" x="600" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-18" parent="1" style="html=1;whiteSpace=wrap;" value="Favorites" vertex="1">
+          <mxGeometry height="50" width="110" x="795" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-19" parent="1" style="html=1;whiteSpace=wrap;" value="FavoriteCard" vertex="1">
+          <mxGeometry height="50" width="110" x="795" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="410" as="sourcePoint" />
+            <mxPoint x="340" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-23" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-22" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Route: /" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-24" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="410" as="sourcePoint" />
+            <mxPoint x="550" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-25" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-24" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Route: /explore" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-28" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="410" as="sourcePoint" />
+            <mxPoint x="750" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-29" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-28" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Route: /card/:id" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-30" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="410" as="sourcePoint" />
+            <mxPoint x="930" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-31" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-30" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Route: /favorites" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-32" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-15" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-16" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="540" as="sourcePoint" />
+            <mxPoint x="540" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-33" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-32" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Route:&amp;nbsp;/explore?search={userInput}" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-34" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="NASA Images API&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;https://images-api.nasa.gov&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-35" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-14" style="endArrow=classic;html=1;rounded=0;fillColor=#008a00;strokeColor=#005700;" target="iu2NFfqAwiD5j62CDNTO-34" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="590" as="sourcePoint" />
+            <mxPoint x="180" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-36" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-35" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Home submits search terms" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-37" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-15" style="endArrow=classic;html=1;rounded=0;fillColor=#008a00;strokeColor=#005700;" target="iu2NFfqAwiD5j62CDNTO-34" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="570" as="sourcePoint" />
+            <mxPoint x="400" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-38" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-37" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Fetch search results" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-20" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-41" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-42" style="curved=1;endArrow=classic;html=1;rounded=0;fillColor=#008a00;strokeColor=#005700;" target="iu2NFfqAwiD5j62CDNTO-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="605" y="690" as="sourcePoint" />
+            <mxPoint x="655" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-43" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-17" style="curved=1;endArrow=classic;html=1;rounded=0;fillColor=#008a00;strokeColor=#005700;" target="iu2NFfqAwiD5j62CDNTO-42" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="640" />
+              <mxPoint x="610" y="680" />
+            </Array>
+            <mxPoint x="649" y="520" as="sourcePoint" />
+            <mxPoint x="180" y="697" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Fetch item by nasa_id" vertex="1">
+          <mxGeometry height="30" width="70" x="540" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Home" vertex="1">
+          <mxGeometry height="30" width="60" x="176" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-45" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-44" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" target="iu2NFfqAwiD5j62CDNTO-47" value="navigate with {userInput}">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="226" y="814.66" as="sourcePoint" />
+            <mxPoint x="426" y="814.66" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="React Router" vertex="1">
+          <mxGeometry height="30" width="60" x="426" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Explore" vertex="1">
+          <mxGeometry height="30" width="60" x="586" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-49" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-47" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" target="iu2NFfqAwiD5j62CDNTO-48" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="496" y="780" as="sourcePoint" />
+            <mxPoint x="656" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="NASA Images API" vertex="1">
+          <mxGeometry height="30" width="120" x="826" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-51" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-48" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" target="iu2NFfqAwiD5j62CDNTO-50" value="fetch search results">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="656" y="790" as="sourcePoint" />
+            <mxPoint x="816" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Search Flow&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="490" y="757.5" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-53" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Browser localStorage&lt;div&gt;key: spasaFavorites&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="120" x="880" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-54" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-16" style="endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" target="iu2NFfqAwiD5j62CDNTO-53" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="614.66" as="sourcePoint" />
+            <mxPoint x="610" y="614.66" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-55" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-54" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Add or remove favorite" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-56" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-53" style="endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" target="iu2NFfqAwiD5j62CDNTO-18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="560" />
+            </Array>
+            <mxPoint x="970" y="620" as="sourcePoint" />
+            <mxPoint x="1070" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-57" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-56" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Read saved favorites" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-58" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-19" style="endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" target="iu2NFfqAwiD5j62CDNTO-53" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="650" as="sourcePoint" />
+            <mxPoint x="970" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-59" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-58" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Remove favorite" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-61" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-18" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="780" y="590" as="sourcePoint" />
+            <mxPoint x="830" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-68" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="favorite prop" vertex="1">
+          <mxGeometry relative="1" x="-0.3833" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Favorite object:&lt;div&gt;{&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nasaId,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;title,&lt;/div&gt;&lt;div&gt;description,&lt;/div&gt;&lt;div&gt;dateCreated,&lt;/div&gt;&lt;div&gt;imageUrl&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="1000" y="727.5" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-63" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-16" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="580" />
+            </Array>
+            <mxPoint x="525" y="589.31" as="sourcePoint" />
+            <mxPoint x="625" y="589.31" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-64" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-63" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Navigate using nasa_id" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-65" edge="1" parent="1" source="iu2NFfqAwiD5j62CDNTO-19" style="endArrow=classic;html=1;rounded=0;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#9933FF);" target="iu2NFfqAwiD5j62CDNTO-17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="560" as="sourcePoint" />
+            <mxPoint x="810" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-66" connectable="0" parent="iu2NFfqAwiD5j62CDNTO-65" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Navigate using nasa_id" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu2NFfqAwiD5j62CDNTO-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Visual Key&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;React Components - &lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 102));&quot;&gt;Yellow&lt;/span&gt;&lt;div&gt;Routing - &lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(153, 51, 255));&quot;&gt;Purple&lt;/span&gt;&lt;/div&gt;&lt;div&gt;External API - &lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 255, 0));&quot;&gt;Green&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Browser storage - &lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 127, 255));&quot;&gt;Blue&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="10" y="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

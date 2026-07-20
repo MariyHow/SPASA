@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c612b1dcec.js" crossorigin="anonymous"></script>
+    <script src="explore.js" defer></script>
+</head>
+<body id="explore__body">
+    <nav>
+        <div class="nav__container">
+            <a href="index.html" class="logo__wrapper">
+                <img class="logo" src="./assets/moon.png" alt="Spasa Logo">
+                <h2>SPASA</h2>
+            </a>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore Space</a></li>
+                <li><a href="#" onclick="toggleModal()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="explore__main">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="explore__header">
+                        <h2 class="explore__header--title">Search Results</h2>
+                        <div class="explore__search">
+                            <input id="exploreSearchInput" type="text" class="explore__search--input" placeholder="Search planets, moons, galaxies...">
+                            <button id="exploreSearchButton" class="explore__search--btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <select id="filter">
+                            <option value="" disabled selected>Sort</option>
+                            <option value="TITLE">Title A-Z</option>
+                            <option value="OPPTITLE">Title Z-A</option>
+                            <option value="NEWEST">Newest</option>
+                            <option value="OLDEST">Oldest</option>
+                        </select>
+                    </div>
+                    <div class="space__cards"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <a href="index.html" class="footer__logo">
+                <img src="./assets/moon.png" alt="SPASA LOGO">
+                <span>SPASA</span>
+            </a>
+            <div class="footer__links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore Space</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="footer__copyright">Copyright &copy; 2026 SPASA. Created by Samariy Howard.</p>
+        </div>
+    </footer>
+</body>
+</html>

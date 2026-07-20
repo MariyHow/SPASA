@@ -2,7 +2,15 @@
 A react based space exploration web application that allows users to search NASA's image library, browse results, view detailed information about space objects, save favorite discoveries, and navigate related space content. This is a application I created inspired by my passion in space and NASA!!
 
 ## Architecture Diagram
-![SPASA Architecture](space-inventory-manager\docs\spi_model-SPASA App.drawio.png)
+![SPASA Architecture](/space-inventory-manager/docs/spasaArchitecture.drawio.png)
+
+## Features
+
+- 🔍 Search NASA Images
+- ❤️ Favorites using localStorage
+- 📄 Card Details
+- ⚛️ React Router
+- 📱 Responsive Design
 
 # Getting Started with Create React App
 

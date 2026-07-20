@@ -8,19 +8,28 @@ function Explore() {
   const searchTerm = searchParams.get("search")
   const [images, setImages] = useState([])
 
-  async function fetchImages() {
-    const response = await fetch(
-      `https://images-api.nasa.gov/search?q=${encodeURIComponent(searchTerm)}&media_type=image`
-    )
-    const data = await response.json()
-
-    setImages(data.collection.items)
-  }
-
+  
   useEffect(() => {
+    async function fetchImages() {
+      try {
+        const response = await fetch(
+          `https://images-api.nasa.gov/search?q=${encodeURIComponent(searchTerm)}&media_type=image`
+        )
+
+        if (!response.ok) {
+          throw new Error(`NASA API request failed: ${response.status}`)
+        }
+        const data = await response.json()
+        setImages(data.collection.items)
+      } catch (error) {
+        console.error("Unable to load NASA images:", error)
+        setImages([])
+      }
+    }
+    
     fetchImages()
   }, [searchTerm])
-
+  
   return (
     <div>
       <h1>{searchTerm}</h1>

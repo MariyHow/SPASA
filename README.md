@@ -1,5 +1,5 @@
-# SPASA
-This is a website I created inspired by my passion in space and NASA!!
+# Welcome to the SPASA React Space Exploration Application
+A react based space exploration web application that allows users to search NASA's image library, browse results, view detailed information about space objects, save favorite discoveries, and navigate related space content. This is a application I created inspired by my passion in space and NASA!!
 
 # Getting Started with Create React App
 

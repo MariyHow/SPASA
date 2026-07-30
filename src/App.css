@@ -12,6 +12,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html, body, #root {
+    min-height: 100%;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 a {
     text-decoration: none;
 }
@@ -120,7 +137,7 @@ nav {
 /* Landing */
 
 #landing {
-    min-height: 100vh;
+    min-height: (100vh - 80px);
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url("./assets/space.png");
     background-size: cover;
     background-position: center;
@@ -200,6 +217,42 @@ header {
     background: #1d5fd1;
 }
 
+.home__hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: 64px 24px;
+}
+
+.home__suggestions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.home__suggestions span {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.home__suggestions button {
+    padding: 9px 16px;
+    border: 1px solid rgba(123, 183, 255, 0.45);
+    border-radius: 999px;
+    background: rgba(11, 61, 145, 0.25);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.home__suggestions button:hover {
+    background: #0B3D91;
+    transform: translateY(-2px);
+}
+
 .space__img {
     position: fixed;
     width: 80px;
@@ -244,49 +297,132 @@ header {
 
 /* Explore */
 
-#explore__body {
-    background: #050505;
-    color: white;
-    min-height: 100vh;
-}
-
 #explore__main {
+    flex: 1;
     min-height: calc(100vh - 80px);
+    background: radial-gradient(circle at top, rgba(11, 61, 145, 0.28), transparent 38%), #050505;
+    color: white;
 }
 
-.explore__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+.explore__hero {
+    padding: 70px 0 52px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.explore__header--title {
-    font-size: 36px;
+.explore__heading {
+    max-width: 760px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.explore__eyebrow {
+    color: #7bb7ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.explore__heading h1 {
+    margin: 8px 0 16px;
+    font-size: clamp(38px, 6w, 64px);
+}
+
+.explore__heading > p:last-child {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 .explore__search {
     display: flex;
     width: 100%;
-    max-width: 600px;
+    max-width: 760px;
+    height: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgba(123, 183, 255, 0.4);
+    border-radius: 999px;
+    background: white;
+    box-shadow: 0 0 35px rgba(11, 61, 145, 0.35);
 }
 
 .explore__search--input {
     flex: 1;
-    height: 56px;
+    min-width: 0;
+    height: 100%;
     border: none;
     outline: none;
-    padding: 0 20px;
-    font-size: 18px;
+    padding: 0 26px;
+    font-size: 17px;
 }
 
 .explore__search--btn {
-    width: 70px;
+    width: 86px;
+    height: 100%;
     border: none;
     background: #0B3D91;
     color: white;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 0 999px 999px 0;
+    transition: all 300ms ease;
+}
+
+.explore__search--btn:hover {
+    background: #1d5fd1;
+}
+
+.explore__results {
+    flex: 1;
+    min-height: 500px;
+}
+
+.explore__results--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.explore__results--header h2 {
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+.explore__results--header span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.explore__empty, .explore__status {
+    max-width: 680px;
+    margin: 70px auto;
+    padding: 52px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.explore__empty--icon {
+    margin-bottom: 18px;
+    font-size: 56px;
+}
+
+.explore__empty h2, .explore__status h2 {
+    margin-bottom: 14px;
+    font-size: 30px;
+}
+
+.explore__empty p, .explore__status p {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+}
+
+.explore__examples {
+    margin-top: 12px;
+    color: #7bb7ff !important;
 }
 
 /* Space Card */
@@ -313,11 +449,6 @@ header {
 .space__card:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 30px rgba(11, 61, 145, 0.45);
-}
-
-.space__card-img--wrapper {
-    height: 240px;
-    overflow: hidden;
 }
 
 .space__card-img--wrapper {
@@ -518,6 +649,60 @@ header {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* Pagniation */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    height: auto;
+    margin-top: 48px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    position: static;
+}
+
+.pagination__pages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination__button, .pagination__page {
+    min-height: 44px;
+    border: 1px solid rgba(123, 183, 255, 0.35);
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.pagination__button {
+    padding: 0 18px;
+    border-radius: 999px;
+}
+
+.pagination__page {
+    min-width: 44px;
+    padding: 0 12px;
+    border-radius: 50%;
+}
+
+.pagination__button:hover:not(:disabled), .pagination__page:hover {
+    border-color: #7bb7ff;
+    background: #0B3D91;
+    box-shadow: 0 0 18px rgba(123, 183, 255, 0.3);
+}
+
+.pagination__button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
 /* Footer */
 
 footer {
@@ -630,13 +815,39 @@ footer {
 }
 
 @media (max-width: 550px) {
-    .explore__header {
+    .home__hero {
+        padding: 48px 18px;
+    }
+    .header__description h1 {
+        font-size: 38px;
+    }
+    .header__description h2 {
+        font-size: 21px;
+    }
+    .header__search, .explore__search {
+        height: 54px;
+    }
+    .explore__hero {
+        padding: 46px 0 34px;
+    }
+    .explore__results--header {
         flex-direction: column;
-        gap: 20px;
         align-items: flex-start;
     }
     .space__card {
         width: 100%;
+    }
+    .pagination {
+        flex-wrap: wrap;
+    }
+    .pagination__pages {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+    .pagination__button {
+        flex: 1;
+        max-width: 160px;
     }
     .footer__links {
         flex-direction: column;
